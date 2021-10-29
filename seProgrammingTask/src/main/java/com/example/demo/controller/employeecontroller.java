@@ -74,6 +74,7 @@ public class employeecontroller {
 
 	        employee.setEmp_name(employeeDetails.getEmp_name());
 	        employee.setEmp_status(employeeDetails.getEmp_status());
+	        employee.setCompleted(employeeDetails.isCompleted());
 	        final employee updatedEmployee = employeerepository.save(employee);
 	        return ResponseEntity.ok(updatedEmployee);
 	    }

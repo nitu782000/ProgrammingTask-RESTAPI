@@ -26,6 +26,7 @@ public class employee {
 	private long id;
 	private String emp_name;
 	private String emp_status;
+	private boolean completed;
 	
 	
 	 
@@ -71,6 +72,18 @@ public class employee {
 	public void setEmp_status(String emp_status) {
 		this.emp_status = emp_status;
 	}
+
+	@Column(name = "completed", nullable = false)
+
+	public boolean isCompleted() {
+		return completed;
+	}
+
+	public void setCompleted(boolean completed) {
+		this.completed = completed;
+	}
+	
+	
 
 
 }
